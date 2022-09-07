@@ -46,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
       searchBloc.results = [];
       FocusScope.of(context).unfocus();
       searchBloc.add(
-        SearchEvent(searchValue: searchController.text, loadMore: false),
+        SearchEvent(searchValue: query, loadMore: false),
       );
     });
   }
